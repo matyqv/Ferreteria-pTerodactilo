@@ -147,6 +147,7 @@ h2 {
 .division-col {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .flex-jc{    
     justify-content: center;
