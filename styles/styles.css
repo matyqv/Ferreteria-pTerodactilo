@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./../img/exhibidor-herramientas-background.avif);
+    background-size: cover;
+}
+
+em {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120%;
+}
+
+p {
+    padding: .1rem 5%;
+    font-size: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*________________________________________________________HEADER______________________________________________ */
+
+.img-logo {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    margin-top: 5%;
+}
+
+.img-logo img {
+    min-width: 70px;
+    max-width: 90px;
+}
+
+.bg-madera {
+    background-image: url(./../img/background-madera.png);
+}
+.bg-cortina {
+    background-image: url(./../img/background-cortina.webp);
+}
+.bg-metal {
+    background-image: url(./../img/backgroung-metal.avif);
+}
+
+.texto-limitado {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 110%;
+    color: aliceblue;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000;
+    text-wrap: balance;
+    max-width: 80vw;
+}
+.menu-hamburguesa{
+    background-image: url(../img/menu-hamburgesa.svg); 
+    height: 40px;
+    width: 40px;
+}
+.navbar-toggler {
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    border: 2px solid rgb(58, 42, 30);
+}.navbar-toggler:focus {
+    box-shadow:none;
+}
+
+.navbar>.container-fluid {
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-left: 0.2rem;
+}
+
+.navbar-toggler {
+    margin-top: 1.5rem;
+    margin-right: .5rem;
+    margin-left: 1.5rem;
+}
+
+.navbar-nav {
+    margin-top: 1rem;
+}
+
+.nav-item {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 2rem;
+    margin: 0.2rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+.nav-link {
+    text-align: center;
+    width: 100%;
+}
+.barra-cortina-metal{
+    width: 100%;
+    height: 1rem;
+}
+/* ======================================= Main ===============================================================*/
+
+main {
+    background-color: rgba(241, 202, 139, 0.897);
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 200%;
+}
+/* Segmentos de imagen + texto ===============================*/
+.formato-imagen {   
+    height: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: contain;
+}
+.img-sin-redondeo{
+    border-radius: 0px;;
+}
+.flex {
+    display: flex;
+}
+.division-row {
+    flex-direction: column;
+    padding: 3%;
+}
+.division-col {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-jc{    
+    justify-content: center;
+    align-items: center;
+}
+.gap-10{
+    gap: 2rem;
+}
+/*================================================================================================================== */
+@media screen and (min-width: 768px) {
+    .division-col {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .division-col img {
+        max-width: 50%; 
+    }
+    .contenedor-grilla {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contenedor-grilla {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3,400px);
+
+    }.division-col img {
+        max-width: 50%;
+        border-radius: 10px;
+    }
+    .navbar-nav {
+        margin-top: 1.5rem;
+    }
+} 
+/*================================================================================================================== */
+/* Lista Productos ===============================*/
+.productos ul{
+    list-style: none;
+    margin:5%;
+    padding-left: 0%;
+    column-gap: 5%; 
+    padding-right:  5%;
+}.productos ul li{
+    background-color: rgba(255, 244, 226, 0.479);
+    border-radius: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.63);
+    width: 100%;
+    margin: 5%;
+    justify-content: center;
+    align-items: center;
+}.productos ul li img{
+    border-radius: 50px;
+    object-fit: contain;
+    width: 110%;
+    padding:10%;
+    
+}.productos ul li p{
+    border-radius: 30px;
+    padding: 5%;
+    width: 100%;
+    height: 30%;
+}
+a img{
+    border-radius: 0px;;
+}
+
+/* ================================== Descargas =========================*/
+.descarga-card{
+    background-color: rgba(255, 226, 188, 0.479);
+    border-radius: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.63);
+    padding: 3%;
+    justify-content: center;
+    align-items: center;
+}
+.descarga-card p{
+    text-align: center;
+    font-size: 140%;
+}.descarga-card a{
+    background-color: rgba(240, 235, 193, 0.925);
+    border: 2px solid rgba(0, 0, 0, 0.63);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}.descarga-card a{
+    padding: 5%;
+}
+
+/*==========================Contacto =========================================*/
+.mapa{
+    height: 150%;
+}
+.form-label{
+    width: 100%;
+}
+.form-label input{
+    width: 100%;
+}
+.form-label label{
+    width: 100%;
+    text-align: center;
+}
+
+/*==========================footer ====================================*/
+footer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.button-footer{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-left: 3%;
+    border-radius: 20px;
+    border: 2px solid rgb(58, 42, 30);
+}.button-footer img{
+    height: 80%;
+    width: 80%;
+}
+.button-enviar{
+    box-sizing: content-box;
+    border: 1px solid rgb(58, 42, 30);
+    background-color: rgba(240, 235, 193, 0.925);
+    width: 5rem;
+    height: 2rem;
+    border-radius: 8px;
+}
