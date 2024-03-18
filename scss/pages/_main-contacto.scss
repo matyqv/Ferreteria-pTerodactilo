@@ -1,0 +1,26 @@
+.mapa{
+    height: 150%;
+    transition: transform 0.3s ease;
+}
+.mapa:hover{
+    transform: scale(1.03);
+}
+.form-label{
+    width: 100%;
+    position: relative ;
+    input{
+        width: 100%;
+    }
+    label{
+        width: 100%;
+        text-align: center;
+    }
+}
+.button-enviar{
+    box-sizing: content-box;
+    border: 1px solid rgb(58, 42, 30);
+    background-color: rgba(240, 235, 193, 0.925);
+    width: 5rem;
+    height: 2rem;
+    border-radius: 8px;
+} 

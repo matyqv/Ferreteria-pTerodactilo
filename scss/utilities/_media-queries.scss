@@ -1,0 +1,46 @@
+@media screen and (min-width: 767px) {
+    .division-col {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .division-col img {
+        max-width: 50%; 
+    }
+    .contenedor-grilla {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .form-label{
+        left: -50px;
+        input{
+            width: 150%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contenedor-grilla {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3,400px);
+
+    }.division-col img {
+        max-width: 50%;
+        border-radius: 10px;
+    }
+    .navbar-nav {
+        margin-top: 1.5rem;
+    }
+    
+    .mapa{
+        height: 240px;
+    }
+} 
+
+@media screen and (min-width: 1440px) {
+
+    .mapa{
+        height: 350px;
+    }
+} 
