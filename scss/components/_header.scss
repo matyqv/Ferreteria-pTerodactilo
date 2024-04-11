@@ -2,8 +2,7 @@ header {
     background-image: $bg-cortina;
 
     .img-logo {
-        display: flex;
-        align-items: center;
+        @extend %flex-align-center;
         max-width: 200px;
         margin-top: 5%;
 
@@ -37,9 +36,8 @@ header {
                     border-radius: 10px;
                     height: 2rem;
                     margin: 0.2rem;
-                    display: flex;
+                    @extend %flex-align-center;
                     justify-items: center;
-                    align-items: center;
                     padding: 1rem 0.5rem;
                     
                     transition: transform 0.3s ease;
@@ -56,20 +54,20 @@ header {
         }
     }
 
-    .barra-cortina-metal {
-        width: 100%;
-        height: 1rem;
+    .barra-cortina-metal { 
+        @include size-h-w(100%,1.2rem) ;
     }
 }
 .menu-hamburguesa{
-    background-image: url(../img/menu-hamburgesa.svg); 
-    height: 40px;
-    width: 40px;
+    background-image: url(../img/menu-hamburgesa.svg);
+    @include size-h-w(40px,40px) ;
+
 }
 .navbar-toggler {
     border-radius: 30px;
-    height: 60px;
-    width: 60px;
+    
+    @include size-h-w(60px,60px) ;
+
     padding: 5px;
     border: 2px solid rgb(58, 42, 30);
     margin-top: 1.5rem;

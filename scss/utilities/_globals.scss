@@ -8,10 +8,6 @@ body {
     background-image:$bg-background-general;
     background-size: cover;
 }
-.bg-metal {
-    background-image: $bg-metal;
-    background-size: cover;
-}
 .bg-madera {
     background-image: $bg-madera;
 }
@@ -46,7 +42,6 @@ h2 {
 .formato-imagen {   
     height: auto;
     max-width: 100%;
-    height: auto;
     border-radius: 20px;
     object-fit: contain;
 }

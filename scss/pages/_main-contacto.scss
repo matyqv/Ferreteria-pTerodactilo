@@ -1,6 +1,6 @@
 .mapa{
     height: 150%;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;   
 }
 .mapa:hover{
     transform: scale(1.03);
@@ -20,7 +20,11 @@
     box-sizing: content-box;
     border: 1px solid rgb(58, 42, 30);
     background-color: rgba(240, 235, 193, 0.925);
-    width: 5rem;
-    height: 2rem;
+    
+    @include size-h-w(5rem,2rem);
     border-radius: 8px;
+    transition: transform 0.3s ease;  
 } 
+.button-enviar:hover{
+    transform: scale(1.03);
+}
