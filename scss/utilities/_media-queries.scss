@@ -1,3 +1,5 @@
+// MEDIA QUERIES
+
 @media screen and (min-width: 767px) {
     .division-col {
         flex-direction: row;
@@ -35,6 +37,17 @@
     
     .mapa{
         height: 240px;
+    }
+
+    .p-text-product{
+        p{
+            font-size: 27px;
+        }
+    }
+    .p-text-index{
+        p{
+            font-size: 20px;
+        }
     }
 } 
 
